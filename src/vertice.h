@@ -3,7 +3,8 @@
 
 struct vertice;
 
-struct vertice* newVertice(char c)
+struct vertice* newVertice(char c);
 
 int** returnAdjMatrix(struct vertice* vertices[], int numofVertices);
 
+void printMatrix(int** matrix, int numofVertices);
