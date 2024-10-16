@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include <header.c>
 
 /*
 * structure: vertice
@@ -24,10 +22,11 @@ struct vertice* newVertice(char c)
 }
 
 /*
-* function: prin  
+* function: returnAdjMatrix
+*
+* retun adjency matrix of the graph
 */
-// retun adjency matrix of the graph
-int** printAdjMatrix(struct vertice* vertices[], int numofVertices) 
+int** returnAdjMatrix(struct vertice* vertices[], int numofVertices) 
 {
    int** matrix = (int **)malloc(sizeof(int*)*numofVertices);
 
@@ -42,6 +41,8 @@ int** printAdjMatrix(struct vertice* vertices[], int numofVertices)
 
    return matrix;
 }
+
+
 
 int main()
 {
